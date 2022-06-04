@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/iconfont/iconfont.ttf</file>
+        <file>res/img/touxiang.png</file>
+        <file>res/img/weixin.jpg</file>
+    </qresource>
+</RCC>

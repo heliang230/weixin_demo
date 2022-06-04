@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NavSystemWidget</class>
+ <widget class="QWidget" name="NavSystemWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>30</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>NavSystemWidget</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#NavSystemWidget QPushButton
+{
+   border:0px;
+   width:30px;
+   height:30px;
+}
+
+#NavSystemWidget QPushButton:hover
+{
+ 
+	background-color: #E2E2E2;
+}
+
+#NavSystemWidget #btnClose:hover
+{
+  background-color: #FB7373;
+  color:#fff;
+}</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>235</width>
+       <height>9</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btnFiexd">
+     <property name="text">
+      <string>顶住</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btnMinOK">
+     <property name="text">
+      <string>最小</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btnMax">
+     <property name="text">
+      <string>最大</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btnClose">
+     <property name="text">
+      <string>关闭</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CharWidget</class>
+ <widget class="QWidget" name="CharWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>759</width>
+    <height>571</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CharWidget</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+#searchWidget
+{
+   background-color:#fff;
+}
+
+#btnSearch
+{
+   background-color:#E2E2E2;
+   border:0px;
+   width:30px;
+   height:30px;
+   border-radius:5px;
+   color:#666;
+}
+
+#lineEdit{
+   background-color:#E2E2E2;
+   border-radius:5px;
+   border-width:0;
+   border-style:outset;
+   width:180px;
+   height:30px;
+   line-height:30px;
+}
+
+#btnSearch:hover{
+   background-color:#D1D1D1;
+}
+#firedListWidget{
+  background-color:#ECEAE8;
+  outline:0px;
+}
+#firedleftWidget{
+ border-left:solid 1px #666;
+}
+#firedListWidget::item:selected {
+   background-color:#C6C5C5;
+   border:0px;
+}
+
+#firedListWidget::item:hover{
+ background-color:#DFDCDB;
+}
+#myChatWidget{
+  background-color:#F5F5F5;
+}
+
+</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="firedleftWidget" native="true">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>250</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>250</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item alignment="Qt::AlignTop">
+       <widget class="QWidget" name="searchWidget" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>60</height>
+         </size>
+        </property>
+        <widget class="DiyLineEdit" name="lineEdit">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>15</y>
+           <width>180</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="baseSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="cursor">
+          <cursorShape>IBeamCursor</cursorShape>
+         </property>
+         <property name="mouseTracking">
+          <bool>false</bool>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="frame">
+          <bool>true</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+         <property name="cursorMoveStyle">
+          <enum>Qt::LogicalMoveStyle</enum>
+         </property>
+         <property name="clearButtonEnabled">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btnSearch">
+         <property name="geometry">
+          <rect>
+           <x>210</x>
+           <y>15</y>
+           <width>30</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>30</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>+</string>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QListWidget" name="firedListWidget">
+        <property name="styleSheet">
+         <string notr="true">QScrollBar:vertical {
+      border:0;
+      background-color:#ECEAE8;
+ 	  width:5px;
+  }
+  QScrollBar::handle:vertical {
+      background: #B4B1B0;
+      min-height: 10px;
+      border-radius:10px;
+  }
+  QScrollBar::add-line:vertical {
+      border: 0;
+ 
+  }
+
+  QScrollBar::sub-line:vertical {
+      border:0;
+
+  }
+</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="lineWidth">
+         <number>0</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="MyChatWidget" name="myChatWidget" native="true"/>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>DiyLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>diylineedit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>MyChatWidget</class>
+   <extends>QWidget</extends>
+   <header>mychatwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

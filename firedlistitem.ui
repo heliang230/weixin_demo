@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FiredListItem</class>
+ <widget class="QWidget" name="FiredListItem">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>250</width>
+    <height>60</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FiredListItem</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#FiredListItem{
+  background-color:#E2E0DE;
+}
+#lbTitle
+{
+	font: 14px &quot;微软雅黑&quot;;
+    color:#333;
+}
+#lbDesc
+{
+  
+	font: 12px &quot;微软雅黑&quot;;
+    color:#999999;
+
+}</string>
+  </property>
+  <widget class="QLabel" name="lbTuxiang">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>40</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>图像</string>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbTitle">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>10</y>
+     <width>161</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>无名之辈</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbDesc">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>34</y>
+     <width>161</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>最近网速很慢。</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
